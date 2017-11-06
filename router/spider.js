@@ -13,8 +13,6 @@ router.get('/get_all_car_data', (req, res) => {
             res.json(err)
             return
         }
-        console.log('request')
-        console.log(typeof body)
         res.json(body)
     })
 })
