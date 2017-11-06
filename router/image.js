@@ -12,6 +12,11 @@ const imgTypes = ['.jpg', '.jpeg', '.png', '.gif']
 获取文件夹list --分页功能
 
 获取某个文件夹下图片 --分页
+
+
+流程：
+通过数据库获取list名称和cover img
+点击list，获取qiniu相应前缀的资源
 */
 router.get('/get_image_list', (req, res) => {
     // let pageSize = req.query.pageSize
