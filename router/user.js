@@ -154,7 +154,7 @@ router.post('/login_validate_user', (req, res) => {
                 res.cookie('account', account, cookieOp);
                 // ({pwd, ...user_info} = result.toJSON()) // interesting
                 var user_info = {};
-                Object.keys(result).map(key => {
+                Object.keys(result.toJSON()).map(key => {
                     if (key !== 'pwd') {
                       user_info[key] = result[key]
                     }            
