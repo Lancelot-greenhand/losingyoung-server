@@ -1,5 +1,5 @@
 module.exports = {
-    mode: 'dev',
+    mode: 'prod',
     PORT: 3000,
     dev_host_name: 'http://localhost:3000/',
     pro_host_name: 'http://www.losingyoung.com',
